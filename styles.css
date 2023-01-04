@@ -1,0 +1,85 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.m{
+  width: 100%;
+  min-height: 100vh;
+  background: linear-gradient(90deg , rgb(255, 9, 247),rgb(2, 242, 255));
+  display: grid;
+  place-items: center;
+}
+.hover{
+  width: min(25rem,95%);
+  aspect-ratio: 1/1;
+  position: relative;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-template-rows: repeat(4,1fr);
+  perspective: 1500px;
+}
+.hover-image{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  object-fit: cover;
+  z-index: 0;
+  box-shadow: 0 2px 5px 0 rgb(104, 104, 104);
+  transition: transform 0.2s linear;
+  transform-style: preserve-3d;
+  border-radius: 5px;
+}
+.section{
+  z-index: 1;
+}
+.hover:has(.i:hover) .hover-image{
+  transform: rotatez(-5deg) rotatex(20deg);
+}
+.hover:has(.ii:hover) .hover-image{
+  transform: rotatez(-2deg) rotatex(16deg);
+}
+.hover:has(.iii:hover) .hover-image{
+  transform: rotatez(0deg) rotatex(14deg);
+}
+.hover:has(.iv:hover) .hover-image{
+  transform: rotatez(2deg) rotatex(12deg);
+}
+.hover:has(.v:hover) .hover-image{
+  transform: rotatez(-7deg) rotatex(22deg);
+}
+.hover:has(.vi:hover) .hover-image{
+  transform: rotatez(-4deg) rotatex(18deg);
+}
+.hover:has(.vii:hover) .hover-image{
+  transform: rotatez(4deg) rotatex(10deg);
+}
+.hover:has(.viii:hover) .hover-image{
+  transform: rotatez(2deg) rotatex(10deg);
+}
+.hover:has(.ix:hover) .hover-image{
+  transform: rotatez(-4deg) rotatex(22deg);
+}
+.hover:has(.x:hover) .hover-image{
+  transform: rotatez(0deg) rotatex(15deg);
+}
+.hover:has(.xi:hover) .hover-image{
+  transform: rotatez(5deg) rotatex(10deg);
+}
+.hover:has(.xii:hover) .hover-image{
+  transform: rotatez(10deg) rotatex(5deg);
+}
+.hover:has(.xiii:hover) .hover-image{
+  transform: rotatez(2deg) rotatex(-12deg);
+}
+.hover:has(.xiv:hover) .hover-image{
+  transform: rotatez(6deg) rotatex(2deg);
+}
+.hover:has(.xv:hover) .hover-image{
+  transform: rotatez(8deg) rotatex(0deg);
+}
+.hover:has(.xvi:hover) .hover-image{
+  transform: rotatez(5deg) rotatex(-20deg);
+}
